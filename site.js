@@ -12,7 +12,7 @@ function startBackgroundImageSlideshow() {
         slideshowContainer.children[slideshowIndex].classList.remove("show");
         slideshowIndex = (slideshowIndex + 1) % slideshowContainer.children.length;
         slideshowContainer.children[slideshowIndex].classList.add("show");
-    }, 8000);
+    }, 6000);
 }
 
 function mobileMenuButtonClicked() {
