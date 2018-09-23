@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive beauty</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="./mobile.css"/>
+        <link rel="stylesheet" href="./tablet.css"/>
+        <script src="./controller.js"></script>
+    </head>
+    <body onload="initSidebar()">
+        
+        <div class="mobile-menu-button" onclick="mobileMenuButtonClicked()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="flow-sidebar open">
+            <div class="header">
+                <h2>Manooni</h2>
+            </div>
+
+            <ul>
+                <li onclick="return onMenuItemClicked(event);">
+                    <i class="fas fa-search"></i>
+                    <span>Sök</span>
+                </li>
+                <li onclick="return onMenuItemClicked(event);" class="selected">
+                    <i class="fas fa-home"></i>
+                    <span>Hem</span>
+                </li>
+                <li onclick="return onMenuItemClicked(event);">
+                    <i class="fas fa-tv"></i>
+                    <span>Serier</span>
+                </li>
+                <li onclick="return onMenuItemClicked(event);">
+                    <i class="fas fa-film"></i>
+                    <span>Filmer</span>
+                </li>
+                <li onclick="return onMenuItemClicked(event);">
+                    <i class="fas fa-plus"></i>
+                    <span>Min lista</span>
+                </li>
+                <li onclick="return onMenuItemClicked(event);">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Nyheter</span>
+                </li>
+            </ul>
+
+            <div class="footer">
+                <h4>Inställningar</h4>
+            </div>
+        </div>
+
+    </body>
+</html>
