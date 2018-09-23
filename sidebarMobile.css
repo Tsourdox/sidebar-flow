@@ -23,6 +23,11 @@
     transition: opacity 300ms 80ms;
     opacity: 1 !important;
 }
+.flow-sidebar > * {
+    flex-shrink: 0;
+    margin: 1em;
+    padding: 1em 0;
+}
 
 
 
@@ -77,8 +82,6 @@
 .flow-sidebar .header, .flow-sidebar .footer {
     display: flex;
     flex-direction: row;
-    min-height: 2em;
-    margin: 2em 1em;
     opacity: 0;
 }
 
@@ -97,6 +100,5 @@
 .flow-sidebar .footer h4 {
     font-weight: 300;
     margin: 0;
-    padding: 1em 0;
     transition: opacity 300ms 0ms;
 }
