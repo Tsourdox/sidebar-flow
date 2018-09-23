@@ -56,27 +56,3 @@ function onMenuItemClicked(event) {
     
     collapseSidebar();
 }
-
-function mobileMenuButtonClicked() {
-    openSidebar();
-}
-
-
-
-// todo: make sure that chilren won't be picked.
-/** Using recursion to find parent node  */
-function findParentNode(node, selector) {
-    /* Base case 1  - nothing was found and current node is the html node*/
-    if (!node.parentElement) {
-        return null;
-    }
-
-    /* Base case 2 - node was found */
-    var nodeFound = node.parentElement.querySelector(selector);
-    if (nodeFound) {
-        return node;
-    }
-
-    /* Recurring call - not found so check parent */
-    return findParentNode(node.parentElement, selector);
-}

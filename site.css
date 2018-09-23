@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.background-slideshow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.background-slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.background-slideshow img.show {
+    opacity: 1;
+}
+
+.mobile-menu-button {
+    position: fixed;
+    top: 0; left: 0;
+
+    color: rgb(200, 0, 0);
+    text-shadow: 0 0 0.1em white, 0 0 0.5em white, 0 0 1em white;
+    font-size: 2em;
+    padding: 0.5em 0.2em 0em 0.5em;
+}
