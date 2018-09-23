@@ -1,3 +1,4 @@
+/********** THE SIDEBAR **********/
 .flow-sidebar {
     position: fixed;
     top: 0; left: 0; bottom: 0;
@@ -23,6 +24,9 @@
     opacity: 1 !important;
 }
 
+
+
+/********** CENTERED LIST **********/
 .flow-sidebar ul {
     margin: 0;
     padding: 0;
@@ -69,15 +73,23 @@
 
 
 
-
+/********** HEADER & FOOTER **********/
 .flow-sidebar .header, .flow-sidebar .footer {
+    display: flex;
+    flex-direction: row;
     margin: 2em 1em;
     opacity: 0;
 }
 
+.flow-sidebar .header img {
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+}
+
 .flow-sidebar .header h2 {
     margin: 0;
-    padding: 0.2em 0;
+    padding: 0.4em 0;
     transition: opacity 300ms 0ms;
 }
 
