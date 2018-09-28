@@ -3,6 +3,9 @@
     .flow-sidebar {
         width: 4em;
     }
+    .flow-sidebar ul {
+        font-size: 1.2em;
+    }
     .mobile-menu-button {
         display: none;
     }

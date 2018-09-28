@@ -3,23 +3,16 @@
  * 
 */
 var sidebarElement;
+var sidebarDimmer;
 
 function initSidebar() {
     loadSidebarElement();
     addHoverEventListeners();
-    addClickOutsideSidebarEventListener();
 }
 
 function loadSidebarElement() {
     sidebarElement = document.querySelector(".flow-sidebar");
-}
-
-function addClickOutsideSidebarEventListener() {
-    document.addEventListener("click", function(event) {
-        if (!findParentNode(event.target, ".flow-sidebar")) {
-            collapseSidebar();
-        }
-    });
+    sidebarDimmer = document.querySelector(".flow-sidebar-dimmer");
 }
 
 function addHoverEventListeners() {
@@ -36,9 +29,11 @@ function onMouseLeave() {
 
 function openSidebar() {
     sidebarElement.classList.add("open");
+    sidebarDimmer.classList.add("open");
 }
 function collapseSidebar() {
     sidebarElement.classList.remove("open");
+    sidebarDimmer.classList.remove("open");
 }
 
 function onMenuItemClicked(event) {
